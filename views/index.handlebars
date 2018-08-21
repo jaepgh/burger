@@ -1,11 +1,19 @@
-<ol>
+<div class="container">
+  <ul class="col-6" id="burger-menu">
     {{#each burgers}}
-    <li class="col-6">
-        <div class="col-6">{{burger_name}}</div>
-        <button data-id="{{id}}" class="delcat col-6">Devour it!</button>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-6 text-left text-primary">{{burger_name}}</div>
+          <button data-id="{{id}}" class="delcat col-6 btn btn-outline-primary ">Order!</button>
+      </div>
     </li>
     {{/each}}
-</ol>
+  </ul>
+  <ul class="col-6" id="burger-order">
+
+  </ul>
+</div>
+
 <!--
 <h2>Add a Cat</h2>
 <form class="create-form">
